@@ -1,0 +1,13 @@
+.local-history/
+.idea/
+build/
+cmake-build-debug/
+cmake-build-release/
+Session.vim
+compile_commands.json
+*.d
+*.o
+*.inc
+guess
+guess_org
+*.cuh

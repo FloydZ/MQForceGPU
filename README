@@ -1,0 +1,24 @@
+This software solves MQ systems on CUDA-capable GPUs.
+
+This implementation is based on the source code from Hsieh-Chung (Kevin) Chen,
+Tung (Tony) Chou, and Ruben Niederhagen (see AUTHORS file) from the paper "Fast
+Exhaustive Search for Polynomial Systems in F2" by Charles Bouillaguet,
+Hsieh-Chung Chen, Chen-Mou Cheng, Tony Chou, Ruben Niederhagen, Adi Shamir, and
+Bo-Yin Yang (CHES 2010, Lecture Notes in Computer Science, Vol. 6225, pp.
+203—218. Springer, 2010).
+
+The input file format is the same as used in the Fukuoka MQ challenges [1].
+
+The script 'gen_sys.py' can be used to generate a solvable random system for a
+given number of variables and equations.
+
+The script 'fix.py' can be used to fix some variables in an input system.
+
+See the Makefile for examples, e.g., 'make test-small' and 'make test-large'.
+
+
+Requirements:
+
+- CUDA release 9.0
+- Python 3.5.2
+

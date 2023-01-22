@@ -6,7 +6,7 @@ for n in {35..40}; do
 	for u in {7..10}; do
 		for w in {5..10}; do
 			make clean  &> /dev/null
-			python3 gen_kernel.py -u ${u} -w ${w} > kernel.inc  
+			python3 gen_shared_kernel.py -u ${u} -w ${w} > kernel.inc  
 			make UNROLL=${u} MAX_K=${K}  &> /dev/null
 			echo "n=${n}, K=${K} UNROLL=${u}, w=${w}"
 			python3 gen_sys.py -m ${n} -n ${n} | ./guess 0

@@ -1,3 +1,17 @@
+This is n adapted version of the [original CUDA libFES implementation](http://www.polycephaly.org/projects/forcemq/index.shtml)
+by Hsieh-Chung (Kevin) Chen, Tung (Tony) Chou, and Ruben Niederhagen.
+
+Its in a way adapted, that each thread of the CUDA kernel can find multiple
+solutions instead of only one. This is managed via shared memory. Thus each
+thread can find all solutions and keep them in the GPU memory. Therefore a
+second check function is provided, wich checks for each partial solutions if its
+a ful solutions or not, while completly working on the GPU.
+
+
+
+ORIGINAL README:
+================
+
 This software solves MQ systems on CUDA-capable GPUs.
 
 This implementation is based on the source code from Hsieh-Chung (Kevin) Chen,

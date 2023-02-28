@@ -7,6 +7,10 @@ thread can find all solutions and keep them in the GPU memory. Therefore a
 second check function is provided, wich checks for each partial solutions if its
 a ful solutions or not, while completly working on the GPU.
 
+USAGE:
+=====
+
+An example of how to use the software is in `bench.sh` and `bensh_unroll.sh`
 
 
 ORIGINAL README:
